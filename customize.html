@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customize Your Outfit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Customize Your Outfit</h1>
+        <a href="mainpage.html" class="btn back-home">Back to Home</a>
+    </header>
+
+    <section class="custom-form">
+        <h2>Upload Your Reference Image</h2>
+        <input type="file" accept="image/*">
+
+        <h2>Specify Your Size</h2>
+        <select id="size-dropdown">
+            <option value="" disabled selected>Select Size</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+        </select>
+        <input type="text" id="size-input" placeholder="Your size" readonly>
+        
+        <button id="submit-details">Submit</button>
+    </section>
+
+    <script>
+        // Handle size selection
+        const sizeDropdown = document.getElementById('size-dropdown');
+        const sizeInput = document.getElementById('size-input');
+        
+        sizeDropdown.addEventListener('change', () => {
+            sizeInput.value = sizeDropdown.value;
+        });
+
+        // Handle submit button click
+        const submitButton = document.getElementById('submit-details');
+        submitButton.addEventListener('click', () => {
+            if(sizeInput.value === '') {
+                alert('Please select a size before submitting.');
+            } else {
+                alert('Details submitted successfully. We will reach out with price details soon.');
+            }
+        });
+    </script>
+</body>
+</html>
