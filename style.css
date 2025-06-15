@@ -418,4 +418,36 @@ line-height: 1.8;           /* Increases space between lines */
 .buy-now:hover {
   background-color: #1976d2;
 }
+#mini-cart {
+  position: absolute;
+  right: 10px;
+  top: 50px;
+  width: 280px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  z-index: 100;
+  border-radius: 8px;
+  font-family: Arial;
+}
+
+.hidden {
+  display: none;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.cart-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
 
