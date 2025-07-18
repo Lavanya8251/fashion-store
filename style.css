@@ -503,3 +503,9 @@ line-height: 1.8;           /* Increases space between lines */
   height: auto;
   border-radius: 10px;
 }
+@media (max-width: 768px) {
+  .hero .container {
+    flex-direction: column;
+  }
+}
+
