@@ -1,18 +1,17 @@
 /* General Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #ffdde1, #ee9ca7);
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* PINK GRADIENT */
     color: #5a3d5c;
     margin: 0;
     padding: 0;
 }
 
-/* Header & Navigation */
+/* Header */
 header {
     text-align: center;
     padding: 20px 0;
-    back-ground:#ff69b4;
-
+    background: #ff69b4; /* corrected 'back-ground' */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -23,6 +22,7 @@ header {
     text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4, 0 0 30px #ff69b4;
 }
 
+/* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
@@ -56,8 +56,55 @@ nav {
 }
 
 /* Hero Section */
+.hero {
+    margin: 30px 40px;
+    padding: 40px;
+    background: #ffe4ec;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(248, 200, 208, 0.7);
+}
 
-/* Products */
+.hero .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Content Section */
+.content {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.content h2 {
+    font-family: 'Copperplate Gothic', 'Copperplate', sans-serif;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: left; /* corrected spelling */
+}
+
+.content p {
+    font-size: 24px;
+    text-align: left;
+}
+
+/* Image Section */
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.image img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Products Section */
 .products {
     text-align: center;
     padding: 40px 20px;
@@ -67,18 +114,17 @@ nav {
     display: flex;
     justify-content: center;
     gap: 40px;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .product {
-  
-   back-ground:#ff69b4;
+    background: #ff69b4; /* fixed */
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s;
-    width:280px;
-    text-align:center; 
+    width: 280px;
+    text-align: center;
 }
 
 .product:hover {
@@ -89,77 +135,16 @@ nav {
     width: 100%;
     height: 350px;
     border-radius: 5px;
-    object-fit:cover;
+    object-fit: cover;
 }
-/* Basic Reset */
+
+/* Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Hero Section with Light Pink Background, Rounded Corners, and Shadow Effect */
-.hero {
-  height: 600px; /* Fixed height for the hero section */
-  text-align: center;
-  padding: 20px;
-  background-image: url('https://img.freepik.com/premium-photo/there-is-pink-white-painting-with-black-border-generative-ai_958192-1247.jpg?w=2000'); /* Replace with your image path */
-  background-size: cover;
-  border-radius: 20px;
-   border: 2px solid #ff69b4;        /* Round the corners */
-  overflow: hidden;           /* Ensure content doesn't overflow the rounded corners */
-  box-shadow: 0 4px 8px rgba(248, 200, 208, 0.7); /* Soft shadow around the rounded corners */
-  margin-bottom: 30px; /* Space below the hero section */
-}
-
-/* Style for the heading */
-.hero h2 {
-  font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
-  font-size: 80px; /* Adjusted size for heading */
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* Container for content and image */
-.container {
-  display: flex;
-  justify-content: space-between; /* Space between content and image */
-  align-items: center;
-  padding: 10px;
-}
-
-/* Content Section */
-.content p {
-  flex: 1; /* Allow content to take available space */
-  text-align: left;
-  padding-right: 15px;
-  font-size:30px;
-}
-.content h2 {
-  flex: 1; /* Allow content to take available space */
-  text-align: centre;
-  padding-right: 15px;
-   font-family: 'Copperplate Gothic', 'Copperplate', sans-serif;
-
-  font-size:30px;
-}
-
-
-.image {
-  flex: 1;
-  display: flex;
-  justify-content: center; /* center image */
-  align-items: center;
-  margin-top: 20px; /* instead of top:-100px */
-  position: static; /* reset any odd positioning */
-}
-
-.image img {
-  width: 100%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 20px;
-}
 /* Button Styling */
 .btn {
   display: inline-block;
