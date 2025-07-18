@@ -480,3 +480,26 @@ line-height: 1.8;           /* Increases space between lines */
     bottom: 10px;
   }
 }
+/* Hero section container */
+.hero .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Text content */
+.hero .content {
+  flex: 1 1 300px;
+}
+
+/* Image styling */
+.hero .image img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
