@@ -57,21 +57,13 @@ nav {
 
 /* Hero Section */
 .hero {
-  height: 600px;
-  text-align: center;
-  padding: 20px;
-  background-image: url('https://img.freepik.com/premium-photo/there-is-pink-white-painting-with-black-border-generative-ai_958192-1247.jpg?w=2000');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 20px;
-  border: 2px solid #ff69b4;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(248, 200, 208, 0.7);
-  margin-bottom: 30px;
-  background-color: transparent !important; /* ✅ Prevent override */
+    margin: 30px 40px;
+    padding: 40px;
+    background: #ffe4ec;
+     background-image: url('https://img.freepik.com/premium-photo/there-is-pink-white-painting-with-black-border-generative-ai_958192-1247.jpg?w=2000');
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(248, 200, 208, 0.7);
 }
-
 
 .hero .container {
     display: flex;
