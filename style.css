@@ -145,21 +145,22 @@ nav {
 }
 
 
+
+/* Image Section */
 .image {
   flex: 1;
   display: flex;
-  justify-content: center; /* center image */
-  align-items: center;
-  margin-top: 20px; /* instead of top:-100px */
-  position: static; /* reset any odd positioning */
+  justify-content: flex-end;
+  position: relative;
+  top: -100px; /* Align image to the right */
 }
 
 .image img {
-  width: 100%;
-  max-width: 300px;
+  max-width: 70%; 
   height: auto;
-  border-radius: 20px;
-}
+  max-width: 300px; 
+   border-radius: 20px;/* Adjust image size */
+}..is there any changes need to be done
 /* Button Styling */
 .btn {
   display: inline-block;
