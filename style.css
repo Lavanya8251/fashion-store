@@ -56,27 +56,6 @@ nav {
 }
 
 /* Hero Section */
-.hero-section {
-    text-align: center;
-    padding: 50px 20px;
-    background-image: url('https://img.freepik.com/premium-photo/there-is-pink-white-painting-with-black-border-generative-ai_958192-1247.jpg?w=2000'); /* Replace with your image path */
-  background-size: cover;
-
-
-}
-
-.hero-section h2 {
-    font-size: 32px;
-    color: #ff69b4;
-}
-
-.hero-section p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: auto;
-}
-
-}
 
 /* Products */
 .products {
