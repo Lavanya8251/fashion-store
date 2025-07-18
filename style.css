@@ -100,55 +100,58 @@ nav {
 
 /* Hero Section with Light Pink Background, Rounded Corners, and Shadow Effect */
 .hero {
-  height: 600px;
+  height: 600px; /* Fixed height for the hero section */
   text-align: center;
   padding: 20px;
-  background-image: url('https://img.freepik.com/premium-photo/there-is-pink-white-painting-with-black-border-generative-ai_958192-1247.jpg?w=2000');
+  background-image: url('https://img.freepik.com/premium-photo/there-is-pink-white-painting-with-black-border-generative-ai_958192-1247.jpg?w=2000'); /* Replace with your image path */
   background-size: cover;
   border-radius: 20px;
-  border: 2px solid #ff69b4;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(248, 200, 208, 0.7);
-  margin-bottom: 30px;
+   border: 2px solid #ff69b4;        /* Round the corners */
+  overflow: hidden;           /* Ensure content doesn't overflow the rounded corners */
+  box-shadow: 0 4px 8px rgba(248, 200, 208, 0.7); /* Soft shadow around the rounded corners */
+  margin-bottom: 30px; /* Space below the hero section */
 }
 
+/* Style for the heading */
 .hero h2 {
   font-family: 'Brush Script MT', 'Lucida Handwriting', cursive;
-  font-size: 80px;
+  font-size: 80px; /* Adjusted size for heading */
   color: #333;
   margin-bottom: 20px;
 }
 
+/* Container for content and image */
 .container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; /* Space between content and image */
   align-items: center;
   padding: 10px;
 }
 
+/* Content Section */
 .content p {
-  flex: 1;
+  flex: 1; /* Allow content to take available space */
   text-align: left;
   padding-right: 15px;
-  font-size: 30px;
+  font-size:30px;
+}
+.content h2 {
+  flex: 1; /* Allow content to take available space */
+  text-align: centre;
+  padding-right: 15px;
+   font-family: 'Copperplate Gothic', 'Copperplate', sans-serif;
+
+  font-size:30px;
 }
 
-.content h2 {
-  flex: 1;
-  text-align: center;
-  padding-right: 15px;
-  font-family: 'Copperplate Gothic', 'Copperplate', sans-serif;
-  font-size: 30px;
-}
 
 .image {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* center image */
   align-items: center;
-  margin-top: 20px;
-  position: static;
+  margin-top: 20px; /* instead of top:-100px */
+  position: static; /* reset any odd positioning */
 }
 
 .image img {
@@ -157,34 +160,6 @@ nav {
   height: auto;
   border-radius: 20px;
 }
-
-/* 👇 Responsive layout fix */
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .content, .image {
-    flex: 1 1 100%;
-    margin: 10px 0;
-  }
-
-  .hero h2 {
-    font-size: 40px;
-  }
-
-  .content h2, .content p {
-    text-align: center;
-    font-size: 20px;
-    padding: 0;
-  }
-
-  .image img {
-    max-width: 80%;
-  }
-}
-
 /* Button Styling */
 .btn {
   display: inline-block;
