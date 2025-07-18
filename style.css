@@ -166,20 +166,20 @@ nav {
 }
 
 
-/* Image Section */
 .image {
   flex: 1;
   display: flex;
-  justify-content: flex-end;
-  position: relative;
-  top: -100px; /* Align image to the right */
+  justify-content: center; /* center image */
+  align-items: center;
+  margin-top: 20px; /* instead of top:-100px */
+  position: static; /* reset any odd positioning */
 }
 
 .image img {
-  max-width: 70%; 
+  width: 100%;
+  max-width: 300px;
   height: auto;
-  max-width: 300px; 
-   border-radius: 20px;/* Adjust image size */
+  border-radius: 20px;
 }
 
 /* Button Styling */
