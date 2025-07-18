@@ -482,3 +482,22 @@ line-height: 1.8;           /* Increases space between lines */
     bottom: 10px;
   }
 }
+/* Responsive for mobile */
+@media (max-width: 768px) {
+    .hero-section {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    
+    .hero-text h2 {
+        font-size: 28px;
+    }
+    
+    .hero-text p {
+        font-size: 16px;
+    }
+    
+    .hero-image img {
+        max-width: 80%;
+    }
+}
