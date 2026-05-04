@@ -50,3 +50,14 @@ function updateCartCount() {
     }
 }
 
+function sendToWhatsApp(product, price) {
+    let phoneNumber = "919876543210";
+
+    let message = `Hi, I am interested in buying ${product} priced at ₹${price}. Is it available?`;
+
+    let url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(url, "_blank");
+}
+
+
